@@ -1,6 +1,3 @@
-### 3. Install dependencies
-### 4. Create .env file
-### 5. Binance Testnet Setup
 # Trading Bot — Binance Futures Testnet (Python)
 
 ## Overview
@@ -80,6 +77,11 @@ Place a limit order:
 ```bash
 python cli.py BTCUSDT BUY LIMIT 0.001 --price 70000
 ```
+Place a market sell order:
+
+```bash
+python cli.py BTCUSDT sell MARKET 0.001
+```
 
 ## Sample output
 
@@ -89,9 +91,9 @@ Binance Futures Order
 Field         : Value
 --------------------------------
 Order ID      : 13681543827
-Status        : NEW
-Executed Qty  : 0.0000
-Avg Price     : 0.00
+Status        : FILLED
+Executed Qty  : 0.0010
+Avg Price     : 72970.400000
 ```
 
 ## Logging
